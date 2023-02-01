@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Auto Complete</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Raleway:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .red {
+        background-color: white;
+        margin: 1rem;
+      }
+      .green {
+        padding-right: 8rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <article
+        class="auto-complete-form d-flex align-items-center justify-content-center"
+      >
+        <form class="auto-complete-form__wrapper" autocomplete="off">
+          <input type="text" id="input" placeholder="Type a Name..." />
+          <ul class="name-list"></ul>
+        </form>
+      </article>
+      <div id="ulList"></div>
+      <!--  <div
+        class="btn-toolbar justify-content-between"
+        role="toolbar"
+        aria-label="Toolbar with button groups" -->
+
+      <!--  <div class="btn-group" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-secondary">
+            ביקרתי
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            לא אבקר
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            אבקר בעתיד
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            אפס צבע
+          </button>
+          <button type="button" class="btn btn-outline-secondary">
+            שנה צבע
+          </button>
+        </div>
+        <div class="input-group" style="font-size: 2rem">tjkskdsp[adk]</div>
+        <div class="green"></div> -->
+      <!-- </div> -->
+
+      <!--    <div class="show-city d-grid">
+        <ul class="ul">
+          <li class="li">אלעד</li>
+          <li class="li">לא ביקרתי</li>
+          <li class="li">אבקר</li>
+          <li class="li">לא אבקר</li>
+          <li class="li">שנה צבע</li>
+          <li class="li">אפס צבע</li>
+        </ul>
+      </div> -->
+      <form class="d-flex" id="add-name-form">
+        <div class="col">
+          <div class="mb-3">
+            <label for="add-name-input" class="form-label"
+              >Add A Name to AutoComplete:</label
+            >
+            <input
+              type="text"
+              name="add-name"
+              id="add-name-input"
+              class="form-control"
+              placeholder="Name to add..."
+              aria-describedby="helpId"
+            />
+            <button id="btn-add-name" class="w-100 btn btn-primary">Add</button>
+          </div>
+        </div>
+      </form>
+
+      <button id="show-all-names" class="w-100 mb-4 btn btn-warning text-white">
+        Show All Names
+      </button>
+    </div>
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

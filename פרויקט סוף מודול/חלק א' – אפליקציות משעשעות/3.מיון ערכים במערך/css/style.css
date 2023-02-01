@@ -1,0 +1,15 @@
+@import url(reset.css);
+
+.ul-numbers{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1px;
+}
+
+.ul-numbers li{
+    background-color: hotpink;
+    border:1px solid white;
+    color:white;
+    padding: 16px;
+    aspect-ratio: 1,1;
+}

@@ -1,0 +1,31 @@
+.animal-image {
+  width: 150px;
+  padding: 20px;
+}
+#chick > img {
+  transform: rotateY(180deg);
+}
+.chosen-animal {
+  border: 1px dashed blueviolet;
+  border-radius: 8px;
+}
+#box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+/* //classList.remove('row')
+//classList.add('col') */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
